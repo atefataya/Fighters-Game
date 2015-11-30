@@ -53,8 +53,8 @@ class ViewController: UIViewController {
         if enemy.attemptAttack(player.attackPwr){
             
             outputLabel.text = "\(player.name) attack \(enemy.name)"
-            self.playerButton.enabled = false
-            NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "enablePlayerButton", userInfo: nil, repeats: false)
+            self.enemyButton.enabled = false
+            NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "enableEnemyButton", userInfo: nil, repeats: false)
         } else {
             outputLabel.text = "Attack was unsuccessful"
         }
@@ -73,8 +73,8 @@ class ViewController: UIViewController {
         
         if player.attemptAttack(enemy.attackPwr) {
             outputLabel.text = "\(enemy.name) attack \(player.name)"
-            self.enemyButton.enabled = false
-            NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "enableEnemyButton", userInfo: nil, repeats: false)
+            self.playerButton.enabled = false
+            NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "enablePlayerButton", userInfo: nil, repeats: false)
         }else {
             outputLabel.text = "Attack was usuccessful"
         }
@@ -95,14 +95,13 @@ class ViewController: UIViewController {
     
     func enablePlayerButton () {
         
-        if self.playerButton.enabled == false {
+        if self.restartButton.enabled != true {
             self.playerButton.enabled = true
         }
     }
     
     func enableEnemyButton () {
-        
-        if self.enemyButton.enabled == false {
+        if self.restartButton.enabled != true{
             self.enemyButton.enabled = true
         }
     }
