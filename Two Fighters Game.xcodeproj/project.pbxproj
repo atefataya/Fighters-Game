@@ -12,6 +12,7 @@
 		DDF6B22F1C0CDD8E00A64226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF6B22D1C0CDD8E00A64226 /* Main.storyboard */; };
 		DDF6B2311C0CDD8E00A64226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF6B2301C0CDD8E00A64226 /* Assets.xcassets */; };
 		DDF6B2341C0CDD8E00A64226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF6B2321C0CDD8E00A64226 /* LaunchScreen.storyboard */; };
+		DDF6B23C1C0CE51400A64226 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6B23B1C0CE51400A64226 /* Character.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DDF6B2301C0CDD8E00A64226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF6B2331C0CDD8E00A64226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF6B2351C0CDD8E00A64226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF6B23B1C0CE51400A64226 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DDF6B2301C0CDD8E00A64226 /* Assets.xcassets */,
 				DDF6B2321C0CDD8E00A64226 /* LaunchScreen.storyboard */,
 				DDF6B2351C0CDD8E00A64226 /* Info.plist */,
+				DDF6B23B1C0CE51400A64226 /* Character.swift */,
 			);
 			path = "Two Fighters Game";
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF6B23C1C0CE51400A64226 /* Character.swift in Sources */,
 				DDF6B22C1C0CDD8E00A64226 /* ViewController.swift in Sources */,
 				DDF6B22A1C0CDD8E00A64226 /* AppDelegate.swift in Sources */,
 			);
