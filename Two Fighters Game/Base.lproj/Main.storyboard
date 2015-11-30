@@ -80,6 +80,9 @@
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" red="0.97647064920000004" green="0.1176470667" blue="0.11372549830000001" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="restartAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Z6-yg-wcI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -117,6 +120,7 @@
                         <outlet property="enemyButton" destination="HNK-rS-9uR" id="xdn-kR-fHJ"/>
                         <outlet property="outputLabel" destination="8ZU-gq-dew" id="1T2-02-tZt"/>
                         <outlet property="playerButton" destination="1HK-x9-5WH" id="lpw-5S-HiR"/>
+                        <outlet property="restartButton" destination="cJe-8i-5zX" id="N4x-IJ-I83"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
