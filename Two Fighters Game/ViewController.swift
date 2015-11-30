@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController {
     
@@ -20,6 +22,8 @@ class ViewController: UIViewController {
     
     var player: Character!
     var enemy: Character!
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +53,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playerAction(sender: AnyObject) {
+        playMusicAttack()
         
         if enemy.attemptAttack(player.attackPwr){
             
@@ -60,6 +65,7 @@ class ViewController: UIViewController {
         }
         
         if !enemy.isAlive {
+            playMusicDeath()
             outputLabel.text = "\(player.name) killed \(enemy.name)"
             self.playerButton.enabled = false
             self.enemyButton.enabled = false
@@ -70,7 +76,7 @@ class ViewController: UIViewController {
     }
  
     @IBAction func enemyAction(sender: AnyObject) {
-        
+        playMusicAttack()
         if player.attemptAttack(enemy.attackPwr) {
             outputLabel.text = "\(enemy.name) attack \(player.name)"
             self.playerButton.enabled = false
@@ -80,6 +86,7 @@ class ViewController: UIViewController {
         }
         
         if !player.isAlive {
+            playMusicDeath()
             outputLabel.text = "\(enemy.name) killed \(player.name)"
             self.playerButton.enabled = false
             self.enemyButton.enabled = false
@@ -103,6 +110,34 @@ class ViewController: UIViewController {
     func enableEnemyButton () {
         if self.restartButton.enabled != true{
             self.enemyButton.enabled = true
+        }
+    }
+    
+    func playMusicAttack (){
+        
+        do{
+            let soundPath = NSBundle.mainBundle().pathForResource("Attack", ofType: ".mp3")
+            let soundURL = NSURL.fileURLWithPath(soundPath!)
+            try! self.audioPlayer = AVAudioPlayer (contentsOfURL: soundURL)
+            self.audioPlayer.prepareToPlay()
+            self.audioPlayer.play()
+            
+        } catch let err as NSError {
+            print (err)
+        }
+        
+        
+    }
+    func playMusicDeath(){
+        do{
+            let soundPath = NSBundle.mainBundle().pathForResource("Death", ofType: ".mp3")
+            let soundURL = NSURL.fileURLWithPath(soundPath!)
+            try! self.audioPlayer = AVAudioPlayer (contentsOfURL: soundURL)
+            self.audioPlayer.prepareToPlay()
+            self.audioPlayer.play()
+            
+        } catch let err as NSError {
+            print (err)
         }
     }
 }

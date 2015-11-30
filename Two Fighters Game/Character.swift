@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class Character {
     private var _hp: Int = 100 //data hiding or encapsultation, protect the variables
     private var _attackPwr: Int = 10

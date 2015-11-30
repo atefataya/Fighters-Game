@@ -13,6 +13,8 @@
 		DDF6B2311C0CDD8E00A64226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF6B2301C0CDD8E00A64226 /* Assets.xcassets */; };
 		DDF6B2341C0CDD8E00A64226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF6B2321C0CDD8E00A64226 /* LaunchScreen.storyboard */; };
 		DDF6B23C1C0CE51400A64226 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6B23B1C0CE51400A64226 /* Character.swift */; settings = {ASSET_TAGS = (); }; };
+		DDF6B23F1C0D08D300A64226 /* Attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF6B23D1C0D08D300A64226 /* Attack.mp3 */; settings = {ASSET_TAGS = (); }; };
+		DDF6B2401C0D08D300A64226 /* Death.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF6B23E1C0D08D300A64226 /* Death.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DDF6B2331C0CDD8E00A64226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF6B2351C0CDD8E00A64226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDF6B23B1C0CE51400A64226 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		DDF6B23D1C0D08D300A64226 /* Attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Attack.mp3; sourceTree = "<group>"; };
+		DDF6B23E1C0D08D300A64226 /* Death.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Death.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DDF6B2321C0CDD8E00A64226 /* LaunchScreen.storyboard */,
 				DDF6B2351C0CDD8E00A64226 /* Info.plist */,
 				DDF6B23B1C0CE51400A64226 /* Character.swift */,
+				DDF6B23D1C0D08D300A64226 /* Attack.mp3 */,
+				DDF6B23E1C0D08D300A64226 /* Death.mp3 */,
 			);
 			path = "Two Fighters Game";
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF6B23F1C0D08D300A64226 /* Attack.mp3 in Resources */,
+				DDF6B2401C0D08D300A64226 /* Death.mp3 in Resources */,
 				DDF6B2341C0CDD8E00A64226 /* LaunchScreen.storyboard in Resources */,
 				DDF6B2311C0CDD8E00A64226 /* Assets.xcassets in Resources */,
 				DDF6B22F1C0CDD8E00A64226 /* Main.storyboard in Resources */,
